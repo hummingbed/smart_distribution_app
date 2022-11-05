@@ -1,0 +1,49 @@
+.login-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.login-component .form-group input {
+    font-size: 2.6rem;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    /* border: none; */
+}
+
+.header-three {
+    margin-bottom: 2.5rem;
+}
+
+.login-component .submit {
+    /* font-size: 2.5rem;
+    background-color: #FFE0AB; */
+    background-color: #FFE0AB;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+}
+
+form {
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.forgot-password{
+    margin-bottom: 3.8rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: #1D1D1D;
+}
