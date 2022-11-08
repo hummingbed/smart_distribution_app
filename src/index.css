@@ -8,10 +8,12 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   font-weight: 400;
+  color: black;
 }
 
 html {
   font-size: 62.5%;
+
 }
 
 label {
@@ -29,11 +31,6 @@ h3 {
   line-height: 2rem;
 }
 
-/* a{
-  text-decoration: none;
-  list-style: none;
-} */
-
 .home-component {
   width: 375px;
   background-color: #F5F5F5;
@@ -43,3 +40,109 @@ h3 {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+
+/* Begin Nav Components */
+.double-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3.5rem;
+  font-size: 3rem;
+}
+
+.left-arrow {
+  border: 1px solid #E5E5E5;
+  font-weight: lighter;
+  border-radius: .5rem;
+  color: #212529;
+  cursor: pointer;
+}
+/* End Nav Components */
+
+
+
+/* Begin Request Components */
+.border-center {
+  margin-left: 14rem;
+  width: 26%;
+}
+
+.border-left {
+  float: left;
+  width: 30%;
+}
+
+.border-right {
+  margin-left: 26.3rem;
+  width: 29%;
+}
+
+.tab-component {
+  position: relative;
+  margin-top: -1rem;
+}
+
+.border-tab-top {
+  margin-top: -2.5rem;
+
+  border-top: 3px solid #151415;
+  position: absolute;
+}
+
+.tab-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 5rem;
+}
+
+.tab-name-style {
+  text-transform: capitalize;
+  color: #575757;
+}
+
+.request-component {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 1rem -1rem 2rem;
+  /* margin-left: 1rem; */
+}
+
+.request-question-logo {
+  height: 4rem;
+  width: 4rem;
+  font-size: 2rem;
+  background-color: #FFE0AB;
+  border-radius: 5px;
+  position: relative;
+}
+
+.request-question-logo .question-logo{
+  color: #FEA102;
+  font-size: 3rem;
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.request-component .request-text{
+  margin-left: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  /* border: #FEA102 1px solid; */
+  text-transform: capitalize;
+}
+
+.request-component .request-text p{ 
+  color: #575757;
+}
+.request-component .request-text h5{ 
+  color: #1D1D1D;
+}
+
+
+/* End Request Components */
