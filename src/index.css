@@ -59,6 +59,7 @@ h3 {
   color: #212529;
   cursor: pointer;
 }
+
 /* End Nav Components */
 
 
@@ -119,7 +120,7 @@ h3 {
   position: relative;
 }
 
-.request-question-logo .question-logo{
+.request-question-logo .question-logo {
   color: #FEA102;
   font-size: 3rem;
   position: absolute;
@@ -129,7 +130,7 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
-.request-component .request-text{
+.request-component .request-text {
   margin-left: 1rem;
   letter-spacing: 0.1rem;
   line-height: 3rem;
@@ -137,12 +138,159 @@ h3 {
   text-transform: capitalize;
 }
 
-.request-component .request-text p{ 
+.request-component .request-text p {
   color: #575757;
 }
-.request-component .request-text h5{ 
+
+.request-component .request-text h5 {
   color: #1D1D1D;
 }
 
-
 /* End Request Components */
+
+.delivery-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2rem;
+  /* line-height: 4.5rem; */
+}
+
+.delivery-component .tracker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 1rem;
+  padding: 1rem;
+}
+
+/* .delivery-component .delivery-margin {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+} */
+
+/* .delivery-component .destination{
+  display: flex;
+  
+} */
+
+.delivery-component .destination {
+  display: flex;
+  flex-direction: column;
+  background-color: #FDFBFF;
+  padding: 1rem;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+.destination-details-top p {
+  text-transform: uppercase;
+  color: #575757;
+  font-weight: 700;
+}
+
+.delivery-component .reciever .reciever-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delivery-component .reciever .reciever-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2.8rem;
+}
+
+.delivery-component .destination-margin {
+  margin-bottom: 1.9rem;
+  /* margin-top: 1rem; */
+}
+
+.delivery-component .reciever .reciever-contact .email {
+  margin-top: 3rem;
+}
+
+.delivery-component .tracker p {
+  color: #575757;
+  font-size: 1.5rem;
+}
+
+.delivery-component .tracker h5 {
+  color: #1D1D1D;
+}
+
+.delivery-component .tracking-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-component .delivery-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.pickup {
+  margin-top: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #FDFBFF;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+/* .pickup .pickup-details{
+
+} */
+
+.pickup .sender {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.package-details {
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: #FDFBFF;
+}
+
+.pickup .pickup-margin {
+  margin-top: 1.5rem;
+}
+
+.package-details {
+  background-color: #FDFBFF;
+}
+
+.package-details p {
+  color: #575757;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.package-details h5 {
+  color: #1D1D1D;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: -1rem;
+}
+
+.button {
+  background: #FEA102;
+  border-radius: .5rem;
+  border: none;
+  color: #151415;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  margin-top: 5rem;
+}
