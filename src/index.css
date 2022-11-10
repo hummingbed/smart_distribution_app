@@ -294,3 +294,281 @@ h3 {
   letter-spacing: 0.05em;
   margin-top: 5rem;
 }
+
+
+
+
+
+
+
+/* Begin details component */
+.detailes-component {
+  padding: 1rem;
+  position: relative;
+}
+
+.check-icon {
+  background-color: #85E0A3;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.detailes-component h4 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 4rem;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1D1D1D;
+}
+
+.detailes-component hr {
+  margin-top: 7rem;
+}
+
+.detailes-component .tracking {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.detailes-component .tracking p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #575757;
+}
+
+.detailes-component .tracking h5 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: #1D1D1D;
+}
+
+.detailes-component .request-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.detailes-component .request-status h2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #1D1D1D;
+  margin-top: 3rem;
+  /* padding: .8rem; */
+}
+
+.detailes-component .request-status .request-status-green {
+  padding: 1rem;
+  background-color: #85E0A3;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.request-status-left {
+  /* margin-right: 2rem;
+  color: #FEA102;
+  background-color: #85E0A3; */
+  padding-top: 1rem;
+}
+
+.request-detail-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 3rem;
+  background: #FDFBFF;
+  border-radius: 8px;
+  padding-left: 1rem;
+  /* padding: 0px 1rem 0px 1rem ; */
+}
+
+.request-detail-component .request-detail-component-header {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.05em;
+  color: #575757;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+}
+
+.request-detail-component h3 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: #1D1D1D;
+  margin-top: 1.3rem;
+}
+
+.request-detail-component p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: #575757;
+  margin-top: 1.3rem;
+}
+
+.request-detail-component .request-detail-component-reciever {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.request-detail-component .request-detail-component-reciever-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.request-detail-component .request-detail-component-email {
+  margin-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.request-detail-component .reciever-margin-top {
+  margin-top: 1.3rem;
+}
+
+/* End details component */
+
+.page-transfer-component {
+  padding: 1.5rem;
+}
+
+.input-field-component {
+  padding: 1rem;
+  /* background-color: #85E0A3; */
+}
+
+.input-field-component input {
+  width: 31.8rem;
+  height: 4.5rem;
+  border-radius: .5rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #1D1D1D;
+}
+
+.input-field-component input:focus {
+  border-color: #FEA102;
+  outline: none !important;
+  box-shadow: 0 0 10px #FEA102;
+}
+
+.input-field-component label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: #1D1D1D;
+  padding-bottom: .4rem;
+}
+
+.input-field-component :placeholder-shown {
+  font-size: 2rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #1D1D1D;
+}
+
+.page-transfer-component .page-transfer-component-header h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #1D1D1D;
+  margin-bottom: -.5rem;
+}
+
+.page-transfer-component .page-transfer-component-header p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05rem;
+  color: #575757;
+  padding: 1.7rem;
+}
+
+/* .page-transfer-component span {
+  margin-top: 48em;
+} */
+
+.reciever-name-span {
+  width: 328px;
+  height: 152px;
+  background: #FDFBFF;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.reciever-name-span .reciever-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reciever-name-span .reciever-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.reciever-name-span h4 {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  color: #575757;
+  
+}
+
+.reciever-name-span .reciever-name-span-margin-top{
+  margin-bottom: 2rem;
+}
+
+.reciever-name-span h5 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: #1D1D1D;
+}
+
+.reciever-name-span p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  color: #575757;
+}
+
+.reciever-name-span .reciever-contact .reciever-email {
+  margin-top: 2.7rem;
+}
