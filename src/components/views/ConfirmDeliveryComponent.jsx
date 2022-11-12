@@ -36,6 +36,7 @@ const ConfirmDeliveryComponent = () => {
                             </div>
                         </div>
                     </span>
+                    <small></small>
                     <ButtonComponent btnText="Submit" />
                 </form>
             </div>

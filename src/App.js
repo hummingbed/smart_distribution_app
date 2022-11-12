@@ -7,6 +7,7 @@ import RequestTransferComponent from './components/views/RequestTransferComponen
 import DetailsComponent from './components/views/DetailsComponent';
 import PageTransferComponent from './components/views/PageTransferComponent';
 import ConfirmDeliveryComponent from './components/views/ConfirmDeliveryComponent';
+import ScanComponent from './components/views/ScanComponent'
 import './App.css';
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       <Route exact path="/details" element={<DetailsComponent />}></Route>
       <Route exact path="/pagetransfer" element={<PageTransferComponent />}></Route>
       <Route exact path="/confirmdelivery" element={<ConfirmDeliveryComponent />}></Route>
-
+      <Route exact path="/scan" element={<ScanComponent />}></Route>
+      
     </Routes>
 
   );

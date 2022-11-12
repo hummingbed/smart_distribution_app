@@ -1,7 +1,11 @@
 import { useFormik } from 'formik';
+import { useState } from 'react'
 import logoImg from '../img/Vector.png'
 import './Login.css';
+import { Link } from 'react-router-dom';
 const Home = () => {
+
+	const [color, setColor] = useState('');
 
 	const initialValues = {
 		uniqueId: '',
@@ -9,7 +13,8 @@ const Home = () => {
 	}
 
 	const onSubmit = values => {
-			console.log('formik', values)
+
+		console.log('formik', values)
 	}
 
 	const validate = values => {
@@ -22,6 +27,9 @@ const Home = () => {
 			errors.password = 'password is required'
 		} else if (values.password.length < 8) {
 			errors.password = 'password too short'
+		}
+		if (values.password.length < 8) {
+			setColor('#FEA102');
 		}
 		return errors;
 	}
@@ -40,6 +48,7 @@ const Home = () => {
 				<div className="logo">
 					<img src={logoImg} alt="alt.img" />
 				</div>
+				{color}
 
 				<form onSubmit={formik.handleSubmit}>
 
@@ -48,7 +57,7 @@ const Home = () => {
 					</div>
 
 					<div className="form-group">
-						<label htmlFor="inputuniqueId">Unique ID</label>
+						<label className='input-uniqueId' htmlFor="inputuniqueId">Unique ID</label>
 						<input type="text" className="form-control"
 							name='uniqueId' id="inputuniqueId"
 							onChange={formik.handleChange}
@@ -59,7 +68,7 @@ const Home = () => {
 					</div>
 
 					<div className="form-group">
-						<label htmlFor="inputPassword">Password</label>
+						<label className='input-uniqueId' htmlFor="inputPassword">Password</label>
 						<input type="password" className="form-control"
 							name='password' id="inputPassword"
 							onChange={formik.handleChange}
@@ -70,10 +79,13 @@ const Home = () => {
 					</div>
 
 					<div className='forgot-password'>
-						<a className='text-center' href="/">Forgot Password?</a>
+						<p className='text-center' >Forgot Password?</p>
 					</div>
 
-					<input className='submit' type="submit" value="Log in" />
+					<Link to='scan' >
+						<input className='submit' type="submit" style={{ backgroundColor: `${color}`, borderRadius: '1rem' }} value="Log in" />
+					</Link>
+
 
 					{/* <button type="submit" className="btn w-100">Sign in</button> */}
 				</form>

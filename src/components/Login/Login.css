@@ -12,11 +12,39 @@
     margin-bottom: 12px;
 }
 
+.header-three .text-left {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #1D1D1D;
+}
+
+.input-uniqueId {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    color: #1D1D1D;
+
+}
+
 .login-component .form-group input {
-    font-size: 2.6rem;
+    width: 328px;
+    height: 48px;
     background-color: #FFFFFF;
     border: 1px solid #E5E5E5;
-    /* border: none; */
+    font-size: 1.5rem;
+}
+
+.forgot-password .text-center {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #1D1D1D;
+    cursor: pointer;
 }
 
 .header-three {
@@ -24,17 +52,14 @@
 }
 
 .login-component .submit {
-    /* font-size: 2.5rem;
-    background-color: #FFE0AB; */
     background-color: #FFE0AB;
-    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    /* display: inline-block; */
     font-size: 16px;
+    width: 32rem;
 }
 
 form {
@@ -43,7 +68,7 @@ form {
     flex-direction: column;
 }
 
-.forgot-password{
+.forgot-password {
     margin-bottom: 3.8rem;
     margin-top: 2rem;
     text-align: center;

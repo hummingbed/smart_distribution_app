@@ -7,14 +7,14 @@ const PageTransferComponent = () => {
         <div className='home-component'>
             <Nav hidePlusIcon="none" />
             <div className="page-transfer-component">
-                <form action="">
+                <form action="" >
                     <div className='page-transfer-component-header'>
                         <h3>Package Transfer</h3>
                         <p className='text-center'>Enter Driver`s unique ID to transfer this Package</p>
                     </div>
                     <InputFieldcomponent />
-                    <span></span>
-                    <ButtonComponent btnText="Send Request"/>
+                    <a href=""></a>
+                    <ButtonComponent btnText="Send Request" />
                 </form>
             </div>
         </div>

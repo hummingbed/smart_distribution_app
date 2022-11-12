@@ -17,11 +17,16 @@ const Nav = (props) => {
     else if (location.pathname === '/confirmdelivery') {
         var hideIcon = props.hidePlusIcon;
     }
+    else if (location.pathname === '/scan') {
+        var hideIcon = props.hidePlusIcon;
+    }
+
 
     return (
         <div className="double-nav">
             {location.pathname === '/delivery' || location.pathname === '/details' 
             || location.pathname === '/pagetransfer' || location.pathname === '/confirmdelivery' 
+            || location.pathname === '/scan' 
             ? <X className='left-arrow'/> : <ChevronLeft className='left-arrow' />}
             <Plus className='left-arrow' style={{ display: `${hideIcon}` }} />
         </div>
