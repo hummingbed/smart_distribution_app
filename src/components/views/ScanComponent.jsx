@@ -13,9 +13,15 @@ class ScanComponent extends Component {
         this.handleScan = this.handleScan.bind(this)
     }
     handleScan(data) {
-        this.setState({
-            result: data,
-        })
+        // this.setState({
+        //     result: data,
+        // })
+        if(data){
+            console.log(123)
+        }else{
+            console.log('090')
+        }
+        
     }
     handleError(err) {
         console.error(err)

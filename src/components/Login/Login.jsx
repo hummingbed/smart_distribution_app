@@ -3,7 +3,12 @@ import { useState } from 'react'
 import logoImg from '../img/Vector.png'
 import './Login.css';
 import { Link } from 'react-router-dom';
+// import Button from 'react-bootstrap/Button';
+// import ModalComponent from '../ReusableComponents/ModalComponent'
+// import React from 'react';
+
 const Home = () => {
+	
 
 	const [color, setColor] = useState('');
 
@@ -40,15 +45,14 @@ const Home = () => {
 		validate
 	})
 
-
-	//console.log('75654', formik.errors);
 	return (
 		<div className="home-component">
 			<div className="login-component">
 				<div className="logo">
 					<img src={logoImg} alt="alt.img" />
 				</div>
-				{color}
+				
+				
 
 				<form onSubmit={formik.handleSubmit}>
 
@@ -82,7 +86,7 @@ const Home = () => {
 						<p className='text-center' >Forgot Password?</p>
 					</div>
 
-					<Link to='scan' >
+					<Link to='request' >
 						<input className='submit' type="submit" style={{ backgroundColor: `${color}`, borderRadius: '1rem' }} value="Log in" />
 					</Link>
 

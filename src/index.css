@@ -603,3 +603,42 @@ h3 {
   width: 32rem;
   margin-left: 1rem;
 }
+
+
+.spinner {
+  margin-bottom: 2rem;
+  margin-left: 14rem;
+  margin-top: 1.7rem;
+
+}
+
+.visually-hidden {
+  color: #FEA102;
+}
+
+.modal-component-page p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #575757;
+}
+
+.modal-component-page h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #373737;
+  margin-bottom: 1.5rem;
+}
+
+.modal-button-style {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: #151415;
+}
+
