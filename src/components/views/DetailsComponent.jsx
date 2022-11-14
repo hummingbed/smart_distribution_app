@@ -11,7 +11,7 @@ const DetailsComponent = () => {
     return (
         <div className='home-component'>
             <Nav hidePlusIcon="none" />
-            <div className="detailes-component">
+            <div className="detailes-component" style={{padding: '1.5rem'}}>
                 <Check className='check-icon' color='white' />
 
                 <h4 className='text-center'>Delivery completed</h4>

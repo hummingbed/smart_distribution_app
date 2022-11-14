@@ -10,10 +10,31 @@ import {
     MDBIcon
 } from 'mdb-react-ui-kit';
 import Nav from '../ReusableComponents/Nav';
+import { Link, useLocation } from 'react-router-dom';
+
 
 const RequestComponent = () => {
 
-    const [basicActive, setBasicActive] = useState('tab1');
+    const location = useLocation();
+    const newLocations = location.pathname
+
+    const strpString = newLocations.replace('/request/', '');
+
+    if (strpString === 'tab1') {
+        var tabs = 'tab1'
+        console.log(1);
+    }
+    if (strpString === 'tab2') {
+        var tabs = 'tab2'
+    }
+    if (strpString === 'tab3') {
+        var tabs = 'tab3'
+    }
+    if (strpString === '/request') {
+        var tabs = 'tab1'
+    }
+
+    const [basicActive, setBasicActive] = useState(tabs);
     const handleBasicClick = (value) => {
         if (value === basicActive) {
             return;
@@ -23,6 +44,7 @@ const RequestComponent = () => {
 
     return (
         <div className='home-component'>
+
             <Nav />
             <div className='tab-component'>
                 <MDBTabs className='mb-3 tab-name'>
@@ -51,47 +73,48 @@ const RequestComponent = () => {
                         <p className="border-left border-tab-top" />
                         <MDBListGroup style={{ minWidthL: '22rem', backgroundColor: '#F5F5F5' }} light>
                             <MDBListGroupItem >
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'>?</span>
                                     </div>
-
-                                    <div className="request-text">
-                                        <h5>Pickup Request</h5>
-                                        <p>from: Wharehouse Admin</p>
-                                    </div>
-
+                                    <Link to='/delivery' >
+                                        <div className="request-text">
+                                            <h5>Pickup Request</h5>
+                                            <p>from: Wharehouse Admin</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </MDBListGroupItem>
 
                             <MDBListGroupItem>
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'>?</span>
                                     </div>
 
-                                    <div className="request-text">
-                                        <h5>Transfer Request</h5>
-                                        <p>from: James Gabriel</p>
-                                    </div>
-
+                                    <Link to='/delivery' >
+                                        <div className="request-text">
+                                            <h5>Transfer Request</h5>
+                                            <p>from: James Gabriel</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </MDBListGroupItem>
 
                             <MDBListGroupItem >
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'>?</span>
                                     </div>
-
-                                    <div className="request-text">
-                                        <h5>Pickup Request</h5>
-                                        <p>from: Wharehouse Admin</p>
-                                    </div>
-
+                                    <Link to='/delivery' >
+                                        <div className="request-text">
+                                            <h5>Pickup Request</h5>
+                                            <p>from: Wharehouse Admin</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </MDBListGroupItem>
 
@@ -102,62 +125,65 @@ const RequestComponent = () => {
                         <p className="border-center border-tab-top" />
                         <MDBListGroup style={{ minWidthL: '22rem', backgroundColor: '#F5F5F5' }} light>
                             <MDBListGroupItem >
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'><MDBIcon className='display-4' color='warning' fas icon="ellipsis-h" /></span>
                                     </div>
-
-                                    <div className="request-text">
-                                        <h5>#22445678676</h5>
-                                        <p>To: Akure</p>
-                                    </div>
+                                    <Link to='/transfer' >
+                                        <div className="request-text">
+                                            <h5>#22445678676</h5>
+                                            <p>To: Akure</p>
+                                        </div>
+                                    </Link>
 
                                 </div>
                             </MDBListGroupItem>
 
                             <MDBListGroupItem >
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'><MDBIcon className='display-4' color='warning' fas icon="ellipsis-h" /></span>
                                     </div>
-
-                                    <div className="request-text">
-                                        <h5>#123456732578</h5>
-                                        <p>To: Akure</p>
-                                    </div>
+                                    <Link to='/transfer' >
+                                        <div className="request-text">
+                                            <h5>#123456732578</h5>
+                                            <p>To: Akure</p>
+                                        </div>
+                                    </Link>
 
                                 </div>
                             </MDBListGroupItem>
 
                             <MDBListGroupItem >
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'><MDBIcon className='display-4' color='warning' fas icon="ellipsis-h" /></span>
                                     </div>
-
-                                    <div className="request-text">
-                                        <h5>#123456732578</h5>
-                                        <p>To: Abuja</p>
-                                    </div>
+                                    <Link to='/transfer' >
+                                        <div className="request-text">
+                                            <h5>#123456732578</h5>
+                                            <p>To: Abuja</p>
+                                        </div>
+                                    </Link>
 
                                 </div>
                             </MDBListGroupItem>
 
                             <MDBListGroupItem >
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'><MDBIcon className='display-4' color='warning' fas icon="ellipsis-h" /></span>
                                     </div>
-
-                                    <div className="request-text">
-                                        <h5>#123456732578</h5>
-                                        <p>To: Osun</p>
-                                    </div>
-
+                                    <Link to='/transfer' >
+                                        <div className="request-text">
+                                            <h5>#123456732578</h5>
+                                            <p>To: Osun</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </MDBListGroupItem>
 
@@ -168,61 +194,67 @@ const RequestComponent = () => {
                         <p className="border-right border-tab-top" />
                         <MDBListGroup style={{ minWidthL: '22rem', backgroundColor: '#F5F5F5' }} light>
                             <MDBListGroupItem >
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'>?</span>
                                     </div>
-
-                                    <div className="request-text">
-                                        <h5>Pickup Request</h5>
-                                        <p>from: Wharehouse Admin</p>
-                                    </div>
+                                    <Link to='/confirmdelivery' >
+                                        <div className="request-text">
+                                            <h5>Pickup Request</h5>
+                                            <p>from: Wharehouse Admin</p>
+                                        </div>
+                                    </Link>
 
                                 </div>
                             </MDBListGroupItem>
 
                             <MDBListGroupItem >
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'>?</span>
                                     </div>
 
-                                    <div className="request-text">
-                                        <h5>Pickup Request</h5>
-                                        <p>from: Wharehouse Admin</p>
-                                    </div>
+                                    <Link to='/confirmdelivery' >
+                                        <div className="request-text">
+                                            <h5>Pickup Request</h5>
+                                            <p>from: Wharehouse Admin</p>
+                                        </div>
+                                    </Link>
 
                                 </div>
                             </MDBListGroupItem>
 
                             <MDBListGroupItem >
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'>?</span>
                                     </div>
 
-                                    <div className="request-text">
-                                        <h5>Pickup Request</h5>
-                                        <p>from: Wharehouse Admin</p>
-                                    </div>
-
+                                    <Link to='/confirmdelivery' >
+                                        <div className="request-text">
+                                            <h5>Pickup Request</h5>
+                                            <p>from: Wharehouse Admin</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </MDBListGroupItem>
 
                             <MDBListGroupItem >
-                                <div className="request-component">
+                                <div className="request-component" style={{ cursor: 'pointer' }}>
 
                                     <div className='request-question-logo'>
                                         <span className='question-logo'>?</span>
                                     </div>
 
-                                    <div className="request-text">
-                                        <h5>Pickup Request</h5>
-                                        <p>from: Wharehouse Admin</p>
-                                    </div>
+                                    <Link to='/confirmdelivery' >
+                                        <div className="request-text">
+                                            <h5>Pickup Request</h5>
+                                            <p>from: Wharehouse Admin</p>
+                                        </div>
+                                    </Link>
 
                                 </div>
                             </MDBListGroupItem>

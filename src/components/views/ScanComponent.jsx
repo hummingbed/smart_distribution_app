@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import QrReader from 'react-qr-scanner'
 import Nav from '../ReusableComponents/Nav';
+import { Link } from 'react-router-dom';
 
 class ScanComponent extends Component {
     constructor(props) {
@@ -16,12 +17,12 @@ class ScanComponent extends Component {
         // this.setState({
         //     result: data,
         // })
-        if(data){
-            console.log(123)
-        }else{
+        if (data) {
+            alert(123)
+        } else {
             console.log('090')
         }
-        
+
     }
     handleError(err) {
         console.error(err)
@@ -46,7 +47,7 @@ class ScanComponent extends Component {
                             onScan={this.handleScan}
                         />
                         <p>{this.state.result}</p>
-                        <input className='button' type="button" value="Cancel" />
+                        <Link to="/request"> <input className='button' type="button" value="Cancel" /></Link>
                     </div>
                 </form>
 

@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 // import React from 'react';
 
 const Home = () => {
-	
 
 	const [color, setColor] = useState('');
 
@@ -18,7 +17,6 @@ const Home = () => {
 	}
 
 	const onSubmit = values => {
-
 		console.log('formik', values)
 	}
 
@@ -52,8 +50,6 @@ const Home = () => {
 					<img src={logoImg} alt="alt.img" />
 				</div>
 				
-				
-
 				<form onSubmit={formik.handleSubmit}>
 
 					<div className="header-three">

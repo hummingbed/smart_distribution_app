@@ -1,10 +1,27 @@
 import { ChevronLeft, Plus, X } from 'react-bootstrap-icons';
 import { useLocation } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+
+
 const Nav = (props) => {
+    
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const navHandler = async (event) => {
+        event.preventDefault();
+        if (location.pathname === '/request') {
+            navigate("/");
+        }
+        if (location.pathname === '/request') {
+            navigate("/scan");
+        }
+        // if (location.pathname === '/scan') {
+        //     navigate("/request");
+        // }
+    };
 
     
-
-    const location = useLocation();
     if (location.pathname === '/delivery') {
         var hideIcon = props.hidePlusIcon;
     }
@@ -26,9 +43,9 @@ const Nav = (props) => {
         <div className="double-nav">
             {location.pathname === '/delivery' || location.pathname === '/details' 
             || location.pathname === '/pagetransfer' || location.pathname === '/confirmdelivery' 
-            || location.pathname === '/scan' 
-            ? <X className='left-arrow'/> : <ChevronLeft className='left-arrow' />}
-            <Plus className='left-arrow' style={{ display: `${hideIcon}` }} />
+            || location.pathname === '/scan' ? <div onClick={navHandler}> <X className='left-arrow'/>
+            </div> : <div onClick={navHandler}> <ChevronLeft className='left-arrow' /> </div> }
+            <div onClick={navHandler}> <Plus className='left-arrow' style={{ display: `${hideIcon}` }} /> </div>
         </div>
     );
 }

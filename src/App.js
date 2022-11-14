@@ -12,20 +12,18 @@ import './App.css';
 
 function App() {
   return (
-
     <Routes>
       <Route exact path="/" element={<Login />}></Route>
       <Route exact path="/nav" element={<Nav />}></Route>
       <Route exact path="/request" element={<RequestComponent />}></Route>
+      <Route exact path="/request/:id" element={<RequestComponent />}></Route>
       <Route exact path="/delivery" element={<DeliveryComponent />}></Route>
       <Route exact path="/transfer" element={<RequestTransferComponent />}></Route>
       <Route exact path="/details" element={<DetailsComponent />}></Route>
       <Route exact path="/pagetransfer" element={<PageTransferComponent />}></Route>
       <Route exact path="/confirmdelivery" element={<ConfirmDeliveryComponent />}></Route>
       <Route exact path="/scan" element={<ScanComponent />}></Route>
-      
     </Routes>
-
   );
 }
 

@@ -19,7 +19,7 @@ const ConfirmDeliveryComponent = () => {
                                 <p>Name</p>
                                 <h5>Folakemi Olayemi</h5>
                             </div>
-                            <div>
+                            <div style={{ marginRight: '8.2rem' }}>
                                 <p>Gender</p>
                                 <h5>Female</h5>
                             </div>

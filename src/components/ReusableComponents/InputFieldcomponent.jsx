@@ -37,7 +37,7 @@ const InputFieldcomponent = (props) => {
         <div class="col-md-6 input-field-component">
             <label for="inputEmail4" class="form-label">{inputHeader} </label>
             <input type="text" class="form-control" placeholder="xxx-xxx-xxx" id="inputEmail4"
-                name='uniqueId' id="inputuniqueId"
+                name='uniqueId' 
                 onChange={formik.handleChange}
                 value={formik.values.uniqueId}
                 onBlur={formik.handleBlur}
